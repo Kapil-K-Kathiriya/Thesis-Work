@@ -1,0 +1,47 @@
+How to run emularor!!!!!!
+################## For First Time running #####################################
+1) Build Emulator :
+	git clone --recurse-submodules https://github.com/trezor/trezor-firmware.git
+	cd trezor-firmware
+	poetry install
+	cd core
+	
+	scons
+	
+	Source : https://docs.trezor.io/trezor-firmware/core/build/index.html
+	
+2) Install Bridge which is used to communicate through emularot and trezoe suite software 
+   	git clone --recursive https://github.com/trezor/trezord-go.git
+	cd trezord-go
+	go build .
+	./trezord-go -h	
+	
+	Source : https://github.com/trezor/trezord-go
+
+3) Install trezor suite from their website 
+	chmod +x Trezor-Suite-24.3.4-linux-x86_64.AppImage
+	./Trezor-Suite-24.3.4-linux-x86_64.AppImage
+
+
+
+##########################################################################
+
+1) start emulator :
+	Navigate in path : 
+		/01 Thesis Work/Running Emulator/trezor-firmware/core
+	run command : 
+		poetry run ./emu.py
+	
+	
+2) Start Bridge : 
+	Navigate in path : 
+		/01 Thesis Work/Running Emulator/trezord-go
+	run command : 
+		./trezord-go -e 21324
+	
+3) Open Trezor suite : 
+	Navigate in path : 
+		kapil@K-Cube-PC:~/Downloads$
+	run command : 
+		./Trezor-Suite-24.3.4-linux-x86_64.AppImage
+	

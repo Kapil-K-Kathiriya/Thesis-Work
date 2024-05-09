@@ -1,0 +1,8 @@
+^common/
+^core/src/
+^core/site_scons/
+^crypto/
+^legacy/
+^storage/
+^tests/
+^ci/
